@@ -1,8 +1,32 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
+# -------------------------------
+# 💻 IntelliJ IDEA
+# -------------------------------
+.idea/*
+!*.iml                         # 모듈 파일은 유지 (버전 관리 대상)
+.idea/libraries/               # 필요한 라이브러리 설정은 포함
+.idea/modules.xml              # 모듈 구성 파일 (공유 가능)
+.idea/vcs.xml                  # VCS 설정 (선택)
+.idea/inspectionProfiles/      # 코드 검사 규칙 (선택)
+
+# 개별 사용자 설정 (버전관리 제외)
+.idea/shelf/
+.idea/workspace.xml
+.idea/httpRequests/
+.idea/dataSources/
+.idea/dataSources.local.xml
+
+# -------------------------------
+# ⚙️ Build outputs
+# -------------------------------
+/target/                       # Maven 빌드 결과물
+
+# -------------------------------
+# 🧪 Logs and temp
+# -------------------------------
+*.log
+*.tmp
+
+# -------------------------------
+# 🖥️ OS-specific files
+# -------------------------------
+Thumbs.db                     # Windows
