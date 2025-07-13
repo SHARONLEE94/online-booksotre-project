@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="KDT_BE12_Spring:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="180dd6ac-dcd8-458f-aef9-542b52cc33ef" name="Changes" comment="chore: 🗑️ add target/ and IDE-specific files to .gitignore&#10;&#10;- Added .gitignore entries to exclude build output (/target/) and IDE-specific files (/workspace.xml, /dataSources/, etc.) to keep the repository clean and portable across environments.">
-      <change afterPath="$PROJECT_DIR$/.idea/KDT_BE12_Spring.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/304c106f-20c5-4161-979c-8edcde970e55.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/user/userMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
+    <list default="true" id="180dd6ac-dcd8-458f-aef9-542b52cc33ef" name="Changes" comment="feat: implement signup feature including controller, session management, and JSP views&#10;&#10;-Added SignupController, SignupRequestDTO, and SignupSessionMapper for signup flow.&#10;- Implemented join/verify/complete steps with session handling.&#10;- Created JSP views: join.jsp, complete.jsp">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/docs/user/login_logout_register.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dto/requestDTO/LoginRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dto/responseDTO/LoginResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auth/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/KDT_BE12_Spring.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,17 +31,38 @@
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../KDT_BE12_Spring\exportToHTML" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2zkwuEPjuQw5RbIQMuyEaH89Is5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,18 +72,20 @@
     "Maven.online-bookstore [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.oneline_book_store.executor": "Run",
+    "Tomcat Server.online_book_store.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sharo/ojdbc11.jar",
+    "last_opened_file_path": "C:/Users/sharo/Desktop/KDT_BE12_Spring/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.19825919",
-    "project.structure.side.proportion": "0.27302995",
+    "project.structure.side.proportion": "0.10297872",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
@@ -69,6 +98,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sharo\Desktop\KDT_BE12_Spring\src\main\java\com\bookstore\controller\docs" />
       <recent name="C:\Users\sharo\Desktop\KDT_BE12_Spring\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\sharo\Desktop\KDT_BE12_Spring\src\main\webapp" />
       <recent name="C:\Users\sharo\Desktop\KDT_BE12_Spring\src\main" />
@@ -78,6 +108,96 @@
     <option name="myCommands">
       <command value="mvn clean" />
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="oneline_book_store" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="oneline_book_store" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="corretto-17" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="KDT_BE12_Spring:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="e1b55ef2-97aa-4a41-b457-e45a5bcfbbb0" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52174" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="KDT_BE12_Spring:war exploded" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -102,7 +222,10 @@
       <workItem from="1752333273536" duration="201000" />
       <workItem from="1752335379829" duration="2143000" />
       <workItem from="1752339091382" duration="1557000" />
-      <workItem from="1752364424889" duration="2088000" />
+      <workItem from="1752364424889" duration="8173000" />
+      <workItem from="1752376893013" duration="199000" />
+      <workItem from="1752377151818" duration="7591000" />
+      <workItem from="1752386964867" duration="19351000" />
     </task>
     <task id="LOCAL-00001" summary="docs: draft README for the online bookstore project&#10;&#10;- Created the initial draft of the project README for the FastCampus Online Bookstore assignment&#10;- Planning to add UML diagrams, ERD, and API specifications in the next update">
       <option name="closed" value="true" />
@@ -160,7 +283,111 @@
       <option name="project" value="LOCAL" />
       <updated>1752366365243</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="chore: add IntelliJ project structure and DB datasource settings&#10;&#10;-Committed IDE configuration files to maintain a consistent development setup.">
+      <option name="closed" value="true" />
+      <created>1752366554323</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1752366554323</updated>
+    </task>
+    <task id="LOCAL-00009" summary="config: add MyBatis config and mapper setup for user entity&#10;&#10;- Added mybatis-config.xml with camelCase mapping enabled&#10;- Updated root-context.xml to reference MyBatis configuration&#10;- Created userMapper.xml for initial user-related SQL mapping">
+      <option name="closed" value="true" />
+      <created>1752366617115</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1752366617115</updated>
+    </task>
+    <task id="LOCAL-00010" summary="chore: Add Oracle JDBC and dev-friendly dependencies&#10;&#10;- Removed MySQL driver and added Oracle JDBC (ojdbc8) to pom.xml&#10;- Added Lombok dependency for automatic getter/setter generation&#10;- Added JSTL taglibs for JSP view support&#10;- Updated DB connection username from 'system' to 'test' in root-context.xml">
+      <option name="closed" value="true" />
+      <created>1752391855905</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1752391855905</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: Add global exception handling module&#10;&#10;- Implemented ApiResponse&lt;T&gt; class to standardize success/failure responses&#10;- Defined ErrorCode enum with domain-specific error types&#10;- Created CustomException class that wraps ErrorCode for exception throwing&#10;- Added GlobalApiExceptionHandler for REST API-level exception handling&#10;- Added GlobalViewExceptionHandler to support JSP error page routing">
+      <option name="closed" value="true" />
+      <created>1752392363717</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1752392363717</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: Add test logic for fetching writer name&#10;&#10;- Implemented end-to-end test flow to verify DB and JSP linkage&#10;- Added UserController and UserService to fetch writer name via writerNum&#10;- Integrated MyBatis with UserMapper and userMapper.xml&#10;- Used test data from TEST.TB_WRITER table">
+      <option name="closed" value="true" />
+      <created>1752392862088</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1752392862088</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: Scaffold empty domain controllers&#10;&#10;- Added empty controller classes for each domain: Book, Cart, Order, Payment, Review&#10;- Initial scaffolding only, no endpoints implemented yet&#10;- Will be expanded later with request mapping logic">
+      <option name="closed" value="true" />
+      <created>1752393456610</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1752393456610</updated>
+    </task>
+    <task id="LOCAL-00014" summary="docs: Add controller layer doc and RootController&#10;&#10;- Created controller.md to document controller layer conventions&#10;- Summarized REST vs JSP usage and annotation examples&#10;- Added RootController mapped to &quot;/&quot; path to test routing and view error forwarding">
+      <option name="closed" value="true" />
+      <created>1752393865152</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1752393865152</updated>
+    </task>
+    <task id="LOCAL-00015" summary="style: Add JSP views for main and error pages&#10;&#10;- Added main.jsp for verifying controller-to-view data flow (e.g., writer name)&#10;- Added 404.jsp to display user-friendly not-found page&#10;- Added error.jsp to show global exception details (status, message, timestamp)&#10;- Initial static designs for verifying JSP routing and error mapping">
+      <option name="closed" value="true" />
+      <created>1752394011699</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1752394011699</updated>
+    </task>
+    <task id="LOCAL-00016" summary="chore:Remove tracked IntelliJ config files&#10;&#10;-.idea configuration files previously added to Git have been untracked&#10;- These files will now be ignored according to the .gitignore rules">
+      <option name="closed" value="true" />
+      <created>1752394337648</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1752394337648</updated>
+    </task>
+    <task id="LOCAL-00017" summary="chore(gitignore): unify .gitignore for IDEs, build outputs, and OS files">
+      <option name="closed" value="true" />
+      <created>1752395341892</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1752395341892</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor: improve ApiResponse builder methods and add @NotNull safety&#10;&#10;- Refactored static factory methods in ApiResponse to reduce redundancy and improve readability.&#10;- Added @NotNull to errorCode parameter for safer error handling.">
+      <option name="closed" value="true" />
+      <created>1752423852303</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1752423852303</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: define user domain and MyBatis mapper for user-related operations&#10;&#10;-Added User and UserIdentityVerification entities.  &#10;-Created UserMapper interface and corresponding MyBatis XML mapper for user CRUD, status update, and duplication check.">
+      <option name="closed" value="true" />
+      <created>1752424764786</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1752424764786</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: implement signup feature including controller, session management, and JSP views&#10;&#10;-Added SignupController, SignupRequestDTO, and SignupSessionMapper for signup flow.&#10;- Implemented join/verify/complete steps with session handling.&#10;- Created JSP views: join.jsp, complete.jsp">
+      <option name="closed" value="true" />
+      <created>1752425350279</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1752425350279</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +412,19 @@
     <MESSAGE value="chore: add static resource directories and configure servlet-context.xml&#10;&#10;- Created /static/css, /static/js, and /static/img directories under src/main/webapp&#10;- Set up mvc:resources mapping in servlet-context.xml to serve static files from /static/**&#10;- Configured component scanning for com.bookstore package&#10;- Registered InternalResourceViewResolver for JSP views under /WEB-INF/views/&#10;- Included Swagger resource handlers for future API documentation" />
     <MESSAGE value="chore: configure Oracle XE datasource, MyBatis, and transaction in root-context.xml&#10;&#10;- Set JDBC URL to jdbc:oracle:thin:@localhost:1521:XE &#10;- Updated driver class to oracle.jdbc.OracleDriver&#10;- Username set to 'system' &#10;&#10;- Registered SqlSessionFactory and SqlSessionTemplate for MyBatis integration&#10;- Enabled automatic mapper scanning for com.bookstore.mapper&#10;- Configured DataSourceTransactionManager&#10;- Activated @Transactional support using annotation-driven configuration" />
     <MESSAGE value="chore: ️ add target/ and IDE-specific files to .gitignore&#10;&#10;- Added .gitignore entries to exclude build output (/target/) and IDE-specific files (/workspace.xml, /dataSources/, etc.) to keep the repository clean and portable across environments." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: ️ add target/ and IDE-specific files to .gitignore&#10;&#10;- Added .gitignore entries to exclude build output (/target/) and IDE-specific files (/workspace.xml, /dataSources/, etc.) to keep the repository clean and portable across environments." />
+    <MESSAGE value="chore: add IntelliJ project structure and DB datasource settings&#10;&#10;-Committed IDE configuration files to maintain a consistent development setup." />
+    <MESSAGE value="config: add MyBatis config and mapper setup for user entity&#10;&#10;- Added mybatis-config.xml with camelCase mapping enabled&#10;- Updated root-context.xml to reference MyBatis configuration&#10;- Created userMapper.xml for initial user-related SQL mapping" />
+    <MESSAGE value="chore: Add Oracle JDBC and dev-friendly dependencies&#10;&#10;- Removed MySQL driver and added Oracle JDBC (ojdbc8) to pom.xml&#10;- Added Lombok dependency for automatic getter/setter generation&#10;- Added JSTL taglibs for JSP view support&#10;- Updated DB connection username from 'system' to 'test' in root-context.xml" />
+    <MESSAGE value="feat: Add global exception handling module&#10;&#10;- Implemented ApiResponse&lt;T&gt; class to standardize success/failure responses&#10;- Defined ErrorCode enum with domain-specific error types&#10;- Created CustomException class that wraps ErrorCode for exception throwing&#10;- Added GlobalApiExceptionHandler for REST API-level exception handling&#10;- Added GlobalViewExceptionHandler to support JSP error page routing" />
+    <MESSAGE value="feat: Add test logic for fetching writer name&#10;&#10;- Implemented end-to-end test flow to verify DB and JSP linkage&#10;- Added UserController and UserService to fetch writer name via writerNum&#10;- Integrated MyBatis with UserMapper and userMapper.xml&#10;- Used test data from TEST.TB_WRITER table" />
+    <MESSAGE value="feat: Scaffold empty domain controllers&#10;&#10;- Added empty controller classes for each domain: Book, Cart, Order, Payment, Review&#10;- Initial scaffolding only, no endpoints implemented yet&#10;- Will be expanded later with request mapping logic" />
+    <MESSAGE value="docs: Add controller layer doc and RootController&#10;&#10;- Created controller.md to document controller layer conventions&#10;- Summarized REST vs JSP usage and annotation examples&#10;- Added RootController mapped to &quot;/&quot; path to test routing and view error forwarding" />
+    <MESSAGE value="style: Add JSP views for main and error pages&#10;&#10;- Added main.jsp for verifying controller-to-view data flow (e.g., writer name)&#10;- Added 404.jsp to display user-friendly not-found page&#10;- Added error.jsp to show global exception details (status, message, timestamp)&#10;- Initial static designs for verifying JSP routing and error mapping" />
+    <MESSAGE value="chore:Remove tracked IntelliJ config files&#10;&#10;-.idea configuration files previously added to Git have been untracked&#10;- These files will now be ignored according to the .gitignore rules" />
+    <MESSAGE value="chore(gitignore): unify .gitignore for IDEs, build outputs, and OS files" />
+    <MESSAGE value="refactor: improve ApiResponse builder methods and add @NotNull safety&#10;&#10;- Refactored static factory methods in ApiResponse to reduce redundancy and improve readability.&#10;- Added @NotNull to errorCode parameter for safer error handling." />
+    <MESSAGE value="feat: define user domain and MyBatis mapper for user-related operations&#10;&#10;-Added User and UserIdentityVerification entities.  &#10;-Created UserMapper interface and corresponding MyBatis XML mapper for user CRUD, status update, and duplication check." />
+    <MESSAGE value="feat: implement signup feature including controller, session management, and JSP views&#10;&#10;-Added SignupController, SignupRequestDTO, and SignupSessionMapper for signup flow.&#10;- Implemented join/verify/complete steps with session handling.&#10;- Created JSP views: join.jsp, complete.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implement signup feature including controller, session management, and JSP views&#10;&#10;-Added SignupController, SignupRequestDTO, and SignupSessionMapper for signup flow.&#10;- Implemented join/verify/complete steps with session handling.&#10;- Created JSP views: join.jsp, complete.jsp" />
   </component>
 </project>
