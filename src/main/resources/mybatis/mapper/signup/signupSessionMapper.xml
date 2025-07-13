@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bookstore.mapper.SignupSessionMapper">
+
+    <!-- 세션 생성 -->
+    <insert id="insertSignupSession" parameterType="com.bookstore.domain.SignupSession" useGeneratedKeys="true" keyProperty="sessionId">
+        INSERT INTO signup_sessions (
+            session_key
+          , signup_step
+          , verification_type
+          , verification_code
+          , verification_expired_at
+          , created_at
+          , updated_at
+          , expired_at
+        ) VALUES (
+            #{sessionKey}
+          , #{signupStep}
+          , #{verificationType}
+          , #{verificationCode}
+          , #{verificationExpiredAt}
+          , #{createdAt}
+          , #{updatedAt}
+          , #{expiredAt}
+        )
+    </insert>
+    
+    <!-- 세션 조회 -->
+    <select id="findBySessionKey" parameterType="string" resultType="com.bookstore.domain.SignupSession">
+        SELECT session_id
+             , session_key
+             , signup_step
+             , verification_type
+             , verification_code
+             , verification_expired_at
+             ,created_at
+             , updated_at
+             , expired_at
+        FROM signup_sessions 
+        WHERE session_key = #{sessionKey}
+    </select>
+    
+    <!-- 세션 단계 업데이트 -->
+    <update id="updateSignupStep">
+        UPDATE signup_sessions
+           SET signup_step = #{signupStep}
+             , updated_at = NOW()
+        WHERE session_key = #{sessionKey}
+    </update>
+    
+    <!-- 인증 정보 업데이트 -->
+    <update id="updateVerificationInfo">
+        UPDATE signup_sessions
+           SET verification_type = #{verificationType}
+             , verification_code = #{verificationCode}
+             , verification_expired_at = #{verificationExpiredAt}
+             , updated_at = NOW()
+        WHERE session_key = #{sessionKey}
+    </update>
+    
+    <!-- 세션 삭제 -->
+    <delete id="deleteSignupSession" parameterType="string">
+        DELETE FROM signup_sessions
+              WHERE session_key = #{sessionKey}
+    </delete>
+    
+    <!-- 만료된 세션 정리 -->
+    <delete id="deleteExpiredSessions">
+        DELETE FROM signup_sessions
+              WHERE expired_at &lt; NOW()
+    </delete>
+
+</mapper> 
