@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bookstore.mapper.UserMapper">
+    <select id="selectWriterName" resultType="String" parameterType="com.bookstore.dto.requestDTO.UserRequestDTO">
+        select WRITER_NM
+        from TEST.TB_WRITER
+        where WRITER_NO = #{writerNum}
+    </select>
+
+</mapper>
