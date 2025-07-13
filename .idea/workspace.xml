@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="180dd6ac-dcd8-458f-aef9-542b52cc33ef" name="Changes" comment="chore: 🗑️ add target/ and IDE-specific files to .gitignore&#10;&#10;- Added .gitignore entries to exclude build output (/target/) and IDE-specific files (/workspace.xml, /dataSources/, etc.) to keep the repository clean and portable across environments.">
+      <change afterPath="$PROJECT_DIR$/.idea/KDT_BE12_Spring.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/304c106f-20c5-4161-979c-8edcde970e55.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/user/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../KDT_BE12_Spring\exportToHTML" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2zkwuEPjuQw5RbIQMuyEaH89Is5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.online-bookstore [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sharo/ojdbc11.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.19825919",
+    "project.structure.side.proportion": "0.27302995",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "java.sql.Driver",
+      "oracle"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sharo\Desktop\KDT_BE12_Spring\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\sharo\Desktop\KDT_BE12_Spring\src\main\webapp" />
+      <recent name="C:\Users\sharo\Desktop\KDT_BE12_Spring\src\main" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="180dd6ac-dcd8-458f-aef9-542b52cc33ef" name="Changes" comment="" />
+      <created>1752288599547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752288599547</updated>
+      <workItem from="1752288600607" duration="18652000" />
+      <workItem from="1752325928736" duration="340000" />
+      <workItem from="1752326283215" duration="5732000" />
+      <workItem from="1752332060080" duration="1205000" />
+      <workItem from="1752333273536" duration="201000" />
+      <workItem from="1752335379829" duration="2143000" />
+      <workItem from="1752339091382" duration="1557000" />
+      <workItem from="1752364424889" duration="2088000" />
+    </task>
+    <task id="LOCAL-00001" summary="docs: draft README for the online bookstore project&#10;&#10;- Created the initial draft of the project README for the FastCampus Online Bookstore assignment&#10;- Planning to add UML diagrams, ERD, and API specifications in the next update">
+      <option name="closed" value="true" />
+      <created>1752293127073</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752293127073</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore: 기본 Maven 디렉토리 구조 생성 (src/main/java, webapp 등)&#10;&#10;- src/main/java, src/main/resources, src/main/webapp/WEB-INF/views 생성&#10;- 아직 기능 구현은 없으며, 이후 Spring MVC 구성 예정&#10;- GitHub fork 레포에 초기 구조 세팅 목적">
+      <option name="closed" value="true" />
+      <created>1752299836193</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752299836193</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: update web.xml &#10;&#10;- rename servlet and adjust dispatcher path for bookstore project">
+      <option name="closed" value="true" />
+      <created>1752315644052</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752315644052</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: configure web module and fix web resource directory for deployment&#10;&#10;- Fixed incorrect Web Resource Directory mapping in IntelliJ&#10;- Registered src/main/webapp as the proper web root&#10;- Enabled recognition of web.xml and static/view resources&#10;- Resolved unresolved class/package errors (e.g., DispatcherServlet, ContextLoaderListener)">
+      <option name="closed" value="true" />
+      <created>1752323217706</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752323217706</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: add static resource directories and configure servlet-context.xml&#10;&#10;- Created /static/css, /static/js, and /static/img directories under src/main/webapp&#10;- Set up mvc:resources mapping in servlet-context.xml to serve static files from /static/**&#10;- Configured component scanning for com.bookstore package&#10;- Registered InternalResourceViewResolver for JSP views under /WEB-INF/views/&#10;- Included Swagger resource handlers for future API documentation">
+      <option name="closed" value="true" />
+      <created>1752324736931</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752324736931</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: configure Oracle XE datasource, MyBatis, and transaction in root-context.xml&#10;&#10;- Set JDBC URL to jdbc:oracle:thin:@localhost:1521:XE &#10;- Updated driver class to oracle.jdbc.OracleDriver&#10;- Username set to 'system' &#10;&#10;- Registered SqlSessionFactory and SqlSessionTemplate for MyBatis integration&#10;- Enabled automatic mapper scanning for com.bookstore.mapper&#10;- Configured DataSourceTransactionManager&#10;- Activated @Transactional support using annotation-driven configuration">
+      <option name="closed" value="true" />
+      <created>1752328673529</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752328673529</updated>
+    </task>
+    <task id="LOCAL-00007" summary="chore: 🗑️ add target/ and IDE-specific files to .gitignore&#10;&#10;- Added .gitignore entries to exclude build output (/target/) and IDE-specific files (/workspace.xml, /dataSources/, etc.) to keep the repository clean and portable across environments.">
+      <option name="closed" value="true" />
+      <created>1752366365243</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752366365243</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="docs: draft README for the online bookstore project&#10;&#10;- Created the initial draft of the project README for the FastCampus Online Bookstore assignment&#10;- Planning to add UML diagrams, ERD, and API specifications in the next update" />
+    <MESSAGE value="chore: 기본 Maven 디렉토리 구조 생성 (src/main/java, webapp 등)&#10;&#10;- src/main/java, src/main/resources, src/main/webapp/WEB-INF/views 생성&#10;- 아직 기능 구현은 없으며, 이후 Spring MVC 구성 예정&#10;- GitHub fork 레포에 초기 구조 세팅 목적" />
+    <MESSAGE value="chore: update web.xml &#10;&#10;- rename servlet and adjust dispatcher path for bookstore project" />
+    <MESSAGE value="chore: configure web module and fix web resource directory for deployment&#10;&#10;- Fixed incorrect Web Resource Directory mapping in IntelliJ&#10;- Registered src/main/webapp as the proper web root&#10;- Enabled recognition of web.xml and static/view resources&#10;- Resolved unresolved class/package errors (e.g., DispatcherServlet, ContextLoaderListener)" />
+    <MESSAGE value="chore: add static resource directories and configure servlet-context.xml&#10;&#10;- Created /static/css, /static/js, and /static/img directories under src/main/webapp&#10;- Set up mvc:resources mapping in servlet-context.xml to serve static files from /static/**&#10;- Configured component scanning for com.bookstore package&#10;- Registered InternalResourceViewResolver for JSP views under /WEB-INF/views/&#10;- Included Swagger resource handlers for future API documentation" />
+    <MESSAGE value="chore: configure Oracle XE datasource, MyBatis, and transaction in root-context.xml&#10;&#10;- Set JDBC URL to jdbc:oracle:thin:@localhost:1521:XE &#10;- Updated driver class to oracle.jdbc.OracleDriver&#10;- Username set to 'system' &#10;&#10;- Registered SqlSessionFactory and SqlSessionTemplate for MyBatis integration&#10;- Enabled automatic mapper scanning for com.bookstore.mapper&#10;- Configured DataSourceTransactionManager&#10;- Activated @Transactional support using annotation-driven configuration" />
+    <MESSAGE value="chore: ️ add target/ and IDE-specific files to .gitignore&#10;&#10;- Added .gitignore entries to exclude build output (/target/) and IDE-specific files (/workspace.xml, /dataSources/, etc.) to keep the repository clean and portable across environments." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: ️ add target/ and IDE-specific files to .gitignore&#10;&#10;- Added .gitignore entries to exclude build output (/target/) and IDE-specific files (/workspace.xml, /dataSources/, etc.) to keep the repository clean and portable across environments." />
+  </component>
+</project>
