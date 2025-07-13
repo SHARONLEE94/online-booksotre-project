@@ -1,12 +1,15 @@
 # -------------------------------
-# 💻 IntelliJ IDEA
+# IntelliJ IDEA
 # -------------------------------
 .idea/*
-!*.iml                         # 모듈 파일은 유지 (버전 관리 대상)
-.idea/libraries/               # 필요한 라이브러리 설정은 포함
-.idea/modules.xml              # 모듈 구성 파일 (공유 가능)
-.idea/vcs.xml                  # VCS 설정 (선택)
-.idea/inspectionProfiles/      # 코드 검사 규칙 (선택)
+!*.iml
+.idea/libraries/
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/
+.idea/compiler.xml
+.idea/modules.xml
+.idea/KDT_BE12_Spring.iml
 
 # 개별 사용자 설정 (버전관리 제외)
 .idea/shelf/
@@ -16,17 +19,21 @@
 .idea/dataSources.local.xml
 
 # -------------------------------
-# ⚙️ Build outputs
+# Build outputs
 # -------------------------------
-/target/                       # Maven 빌드 결과물
+/target/
 
 # -------------------------------
-# 🧪 Logs and temp
+# Logs and temp
 # -------------------------------
 *.log
 *.tmp
 
 # -------------------------------
-# 🖥️ OS-specific files
+# OS-specific files
 # -------------------------------
-Thumbs.db                     # Windows
+Thumbs.db
+
+# -------------------------------
+# IntelliJ IDEA
+# -------------------------------
